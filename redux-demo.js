@@ -78,7 +78,6 @@ const FilterLink = ({filter,currentFilter, children,onClick}) => {
 	if (filter === currentFilter) {
 		return <span>{children}</span>
 	}
-
 	return (
 		<a 
 			href="#"
@@ -204,6 +203,7 @@ class TodoApp extends React.Component {
 			this.props.todos,
 			this.props.visibilityFilter
 		);
+		let visibilityFilter = this.props.visibilityFilter;
 		return (
 			<div>
 				<AddTodo onAddClick= {onAddClick} />
