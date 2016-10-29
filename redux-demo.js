@@ -167,7 +167,7 @@ VisibleTodolist.contextTypes={
 }
 
 ///////////////////
-const AddTodo = (pros, {store}) => {
+const AddTodo = (props, {store}) => {
 	let input;
 	return (
 		<div>
